@@ -1,0 +1,72 @@
+/* TIP:create car-image1 the make bigger so it takes 70% width of the container and car-image2 & car-image3 takes 35% width each */
+/* also dont let it to overflow/overlay on any other image FIX IT */
+/* car-image1 is overflowing over other components */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.component { 
+    /* margin-top: 100vh;  */
+    height: 100%;
+background-color: #000000;
+    position: flex;
+    
+    /* flex-direction: column; */
+}
+.car-description {
+padding: 100px 0 100px 0px;
+    margin-top: 100vh;
+    font-size: 38px;
+    text-transform: uppercase;
+    margin-left: 60px;
+    text-align: left;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.car-images {
+    margin-top: 110vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    /* margin-top: 300vh; */
+}
+.car-image1 {
+
+    width: 90%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px; 
+    transition: transform 0.3s ease;
+margin-bottom: 20px;
+}
+.car-image1:hover {
+    transform: scale(1.05);
+}
+
+.car-image2 {
+    width: 44%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin-right: 2%;
+}
+.car-image2:hover {
+    transform: scale(1.05);
+}
+.car-image3 {
+    width: 44%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin-right: 10px;
+}
+.car-image3:hover {
+    transform: scale(1.05);
+}
+
